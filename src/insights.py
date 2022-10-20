@@ -60,34 +60,44 @@ def filter_by_industry(jobs, industry):
     return []
 
 
+def is_bigger_than_current_salary(source_salary, current_salary):
+    return source_salary > current_salary
+
+
+def is_smaller_than_currenty_salary(source_salary, current_salary):
+    return source_salary < current_salary
+
+
+def get_salary_from(source, key, initial_salary):
+    salary_types = {
+        "min_salary": is_smaller_than_currenty_salary,
+        "max_salary": is_bigger_than_current_salary,
+    }
+    filtered_salary = initial_salary
+
+    for job in source:
+        if job[key].isnumeric():
+            salary_converted_int = int(job[key])
+            if salary_types[key](salary_converted_int, filtered_salary):
+                filtered_salary = salary_converted_int
+
+    return filtered_salary
+
+
 def get_max_salary(path):
     jobs = read(path)
-    max_salary = 0
+    initial_salary = 0
+    max_salary = get_salary_from(jobs, "max_salary", initial_salary)
 
-    for job in jobs:
-        if job["max_salary"].isnumeric():
-            salary_converted_int = int(job["max_salary"])
-            if salary_converted_int > max_salary:
-                max_salary = salary_converted_int
     return max_salary
 
 
 def get_min_salary(path):
-    """Get the minimum salary of all jobs
+    jobs = read(path)
+    initial_salary = float("inf")
+    min_salary = get_salary_from(jobs, "min_salary", initial_salary)
 
-    Must call `read`
-
-    Parameters
-    ----------
-    path : str
-        Must be passed to `read`
-
-    Returns
-    -------
-    int
-        The minimum salary paid out of all job opportunities
-    """
-    pass
+    return min_salary
 
 
 def matches_salary_range(job, salary):

@@ -1,12 +1,17 @@
 from src.jobs import read
 
 
+def get_unique_values_from(source, key):
+    unique_value = set()
+    for column in source:
+        unique_value.add(column[key])
+    unique_value_list = [*unique_value]
+    return unique_value_list
+
+
 def get_unique_job_types(path):
     jobs = read(path)
-    jobs_types = set()
-    for job in jobs:
-        jobs_types.add(job["job_type"])
-    jobs_type_list = [*jobs_types]
+    jobs_type_list = get_unique_values_from(jobs, "job_type")
 
     return jobs_type_list
 
@@ -30,21 +35,9 @@ def filter_by_job_type(jobs, job_type):
 
 
 def get_unique_industries(path):
-    """Checks all different industries and returns a list of them
-
-    Must call `read`
-
-    Parameters
-    ----------
-    path : str
-        Must be passed to `read`
-
-    Returns
-    -------
-    list
-        List of unique industries
-    """
-    return []
+    jobs = read(path)
+    jobs_industries_types = get_unique_values_from(jobs, "industry")
+    return jobs_industries_types
 
 
 def filter_by_industry(jobs, industry):

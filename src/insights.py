@@ -4,7 +4,9 @@ from src.jobs import read
 def get_unique_values_from(source, key):
     unique_value = set()
     for column in source:
-        unique_value.add(column[key])
+        empty = 0
+        if len(column[key]) != empty:
+            unique_value.add(column[key])
     unique_value_list = [*unique_value]
     return unique_value_list
 

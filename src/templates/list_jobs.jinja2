@@ -92,8 +92,8 @@
         {% for job in ctx["jobs"] %}
         <tr>
             <td scope="row">
-                {% if job["url"] %}
-                <a href="{{ job['url'] }}">
+                {% if job["id"] %}
+                <a href="job/{{ job["id"] }}">
                     {{ job["id"] }}
                 </a>
                 {% else %}

@@ -95,25 +95,18 @@ def check_input_validation(job: dict):
 
 def matches_salary_range(job, salary):
     check_input_validation(job)
-    # O teste que valida se o input de salary é um numero, cai na exception do
-    # max e min salary. Pois eu verifico se eles são int ao inves de verificar
-    # se eles são numéricos, fazendo com que o teste passe...
+    are_integer([salary])
     return job["max_salary"] >= salary >= job["min_salary"]
 
 
 def filter_by_salary_range(jobs, salary):
-    """Filters a list of jobs by salary range
+    jobs_filtered = []
+    print("----------------------------------------\n")
+    for job in jobs:
+        try:
+            if matches_salary_range(job, salary):
+                jobs_filtered.append(job)
+        except ValueError:
+            print("Invalid min, max and salaries will be ignored")
 
-    Parameters
-    ----------
-    jobs : list
-        The jobs to be filtered
-    salary : int
-        The salary to be used as filter
-
-    Returns
-    -------
-    list
-        Jobs whose salary range contains `salary`
-    """
-    return []
+    return jobs_filtered

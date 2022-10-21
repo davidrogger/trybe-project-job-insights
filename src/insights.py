@@ -101,12 +101,11 @@ def matches_salary_range(job, salary):
 
 def filter_by_salary_range(jobs, salary):
     jobs_filtered = []
-    print("----------------------------------------\n")
     for job in jobs:
         try:
             if matches_salary_range(job, salary):
                 jobs_filtered.append(job)
         except ValueError:
-            print("Invalid min, max and salaries will be ignored")
+            pass
 
     return jobs_filtered

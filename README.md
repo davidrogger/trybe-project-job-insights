@@ -37,7 +37,39 @@
 
 # Conclusão
 
-- Senti bastante saudades do javascript e do typescript, mas é ótimo sentir na pele, o quão "fácil" fica aprender outra linguagem, a lógica é a mesma, só muda algumas regras e sintaxes.
+- Por apego a sintaxe tive bastante saudades do javascript e do typescript, mas é ótimo sentir na pele, o quão "fácil" fica aprender outra linguagem, a lógica é a mesma, só mudando algumas regras e sintaxes.
+
+<details>
+  <summary>
+    <strong>
+      :newspaper_roll: Requisitos solicitados durante o desenvolvimento do projeto
+    </strong>
+  </summary>
+
+ 
+  ### Requisitos
+  *Nome* | *Avaliação*
+  --- | :---:
+  1 - Implemente a função read | :heavy_check_mark:
+  2 - Implemente a função get_unique_job_types | :heavy_check_mark:
+  3 - Implemente a função get_unique_industries | :heavy_check_mark:
+  4 - Implemente a função get_max_salary | :heavy_check_mark:
+  5 - Implemente a função get_min_salary | :heavy_check_mark:
+  6 - Implemente a função filter_by_job_type | :heavy_check_mark:
+  7 - Implemente a função filter_by_industry | :heavy_check_mark:
+  8 - Implemente a função matches_salary_range | :heavy_check_mark:
+  9 - Implemente a função filter_by_salary_range | :heavy_check_mark:
+  10 - Implemente um teste para a função count_ocurrences | :heavy_check_mark:
+  11 - Implemente um teste para a função read_brazilian_file | :heavy_check_mark:
+  12 - Implemente um teste para a função sort_by | :heavy_check_mark:
+  13.1 - Crie a rota /job recebendo o parâmetro index | :heavy_check_mark:
+  13.2 - Crie a view job, recebendo o parâmetro index | :heavy_check_mark:
+  13.3 - Implemente view job para que ela retorne status code 200 para jobs válidos | :heavy_check_mark:
+  13.4 - Implemente view job de forma a retornar o HTML exato de uma página de job | :heavy_check_mark:
+
+</details>
+
+#
 
 # Iniciando o Projeto Job Insights.
 

@@ -2,7 +2,7 @@
 
 ## Seção: `Introdução à Python`
 
-- Foi uma seção introdutória a linguagem python, que busca simplicidade em sua sintaxe, sendo uma das linguagem que mais cresceu e se tornou mais popular devido à área de ciência de dados e é extremamente recomendada quando iniciando na programação, sendo também possível usa-la em criação de aplicações web, automoção de tarefas repetitivas, aplicativos desktop, aplicações para dispositivos móveis.
+- Foi uma seção introdutória a linguagem python, que busca simplicidade em sua sintaxe, sendo uma das linguagens que mais cresceu e se tornou mais popular devido à área de ciência de dados e é extremamente recomendada quando iniciando na programação, sendo também possível usá-la em criação de aplicações web, automação de tarefas repetitivas, aplicativos desktop, aplicações para dispositivos móveis.
 
 #
 <div align="center">
@@ -20,9 +20,9 @@
 >Amostra do frontend desenvolvido pela trybe
 ## Projeto: `Job Insights`
 
-- Primeiro projeto do modulo de Ciências da Computação da trybe.
-- Foram desenvolvidos métodos usando python pela primeira vez, pois foi uma nova iniciativa de estudo, apontado pelo modulo para aprender mais de uma linguagem, arquivos de minha autoria com final py são de jobs, insights e tests.
-- Todo desenvolvimento em flask foi desenvolvido pela trybe, com excesão da rota de "job/<index>", que foi o desafio final do projeto, usar o que ja foi fornecido no projeto para desenvolver uma rota carrendo novas informações, que eram dos detalhoes do trabalho na listagem.
+- Primeiro projeto do módulo de Ciências da Computação da trybe.
+- Foram desenvolvidos métodos usando python pela primeira vez, pois foi uma nova iniciativa de estudo, apontado pelo módulo para aprender mais de uma linguagem, arquivos de minha autoria com final py são de jobs, insights e tests.
+- Todo desenvolvimento em flask foi desenvolvido pela trybe, com exceção da rota de "job/<index>", que foi o desafio final do projeto, usar o que ja foi fornecido no projeto para desenvolver uma rota carregando novas informações, que eram dos detalhes do trabalho na listagem.
 
 # Tecnologias e ferramentas usadas 🛠
 

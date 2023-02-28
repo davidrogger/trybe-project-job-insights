@@ -102,3 +102,9 @@ Após o container "levantar" basta acessar a url: `http://localhost:5000/`
 </details>
 
 </details>
+
+#
+
+<div align="right">
+  <img src="https://badgen.net/badge/last%20update/28-02-2023/blue">
+</div>
